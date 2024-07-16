@@ -27,7 +27,6 @@ import lombok.ToString;
 public class UserEntity {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	
 	private int id;
 	
 	@Column(name = "loginId")
@@ -46,5 +45,5 @@ public class UserEntity {
 	@UpdateTimestamp
 	@Column(name = "updatedAt")
 	private LocalDateTime updatedAt;
-
+	
 }
