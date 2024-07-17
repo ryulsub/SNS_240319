@@ -10,4 +10,8 @@
  		FROM
  			`post`
  	</select>
+ 	
+ 	<select id="select">
+ 	
+ 	</select>
  </mapper>
