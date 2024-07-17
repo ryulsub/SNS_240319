@@ -1,4 +1,4 @@
-package com.sns.user.entity;
+package com.sns.post.entity;
 
 import java.time.LocalDateTime;
 
@@ -20,23 +20,22 @@ import lombok.ToString;
 @ToString
 @AllArgsConstructor
 @NoArgsConstructor
-@Getter
 @Builder
-@Table(name = "user")
+@Getter	
+@Table(name = "post")
 @Entity
-public class UserEntity {
+public class PostEntity {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	
-	@Column(name = "loginId")
-	private String loginId;
+	@Column(name = "userId")
+	private int userId;
 	
-	private String password;
+	private String content;
 	
-	private String name;
-	
-	private String email;
+	@Column(name = "imagePath")
+	private String imagePath;
 	
 	@CreationTimestamp
 	@Column(name = "createdAt")

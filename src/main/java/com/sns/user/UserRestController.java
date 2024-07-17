@@ -91,7 +91,7 @@ public class UserRestController {
 		
 		// db 조회(loginId, 해싱된 비밀번호) => UserEntity
 		UserEntity user = userBO.getUserEntityByLoginIdPassword(loginId, hashedPassword);
-		
+		 
 		// 응답값
 		Map<String, Object> result = new HashMap<>();
 		if (user != null) { // 성공
@@ -109,4 +109,4 @@ public class UserRestController {
 		}
 		return result;
 	}
-}
+} 
