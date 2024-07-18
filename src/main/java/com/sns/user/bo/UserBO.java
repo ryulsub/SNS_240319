@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 import com.sns.user.entity.UserEntity;
 import com.sns.user.repository.UserRepository;
 
-@Service   
+@Service
 public class UserBO {
 	
 	@Autowired
