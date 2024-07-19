@@ -46,4 +46,5 @@ public class UserEntity {
 	@Column(name = "updatedAt")
 	private LocalDateTime updatedAt;
 
+	
 }
